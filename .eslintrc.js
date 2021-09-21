@@ -1,6 +1,9 @@
 module.exports = {
   parser: 'babel-eslint',
-  extends: '@webex/eslint-config-react',
+  plugins: [
+    'react-redux'
+  ],
+  extends: ['@webex/eslint-config-react', 'plugin:react-redux/recommended'],
   env: {
     jest: true,
     browser: true
